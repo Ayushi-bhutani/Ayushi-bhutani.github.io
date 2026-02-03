@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ayushi Bhutani | Engineer Console</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0d1117;
+            --panel: #161b22;
+            --accent: #58a6ff;
+            --text: #c9d1d9;
+            --muted: #8b949e;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            padding: 40px;
+            border-bottom: 1px solid #30363d;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            color: var(--muted);
+            max-width: 600px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .panel {
+            background: var(--panel);
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .missions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .mission h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 8px;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            margin-right: 6px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .skills div {
+            margin-bottom: 12px;
+        }
+
+        .bar {
+            height: 6px;
+            background: #21262d;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .fill {
+            height: 100%;
+            background: var(--accent);
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            color: var(--muted);
+            border-top: 1px solid #30363d;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ayushi Bhutani — Engineer Console</h1>
+    <p>
+        Building systems, solving algorithmic problems, and experimenting with real-world software ideas.
+        This is not a portfolio. This is a logbook.
+    </p>
+</header>
+
+<section>
+    <h2>🛰 Mission Control</h2>
+
+    <div class="missions">
+        <div class="panel mission">
+            <h3>Sorting Visualizer</h3>
+            <p>Visual explanation of sorting algorithms with performance intuition.</p>
+            <span class="tag">C++</span>
+            <span class="tag">DSA</span>
+            <span class="tag">Visualization</span><br><br>
+            <a href="https://github.com/Ayushi-bhutani" target="_blank">View Mission →</a>
+        </div>
+
+        <div class="panel mission">
+            <h3>Disaster Management Portal</h3>
+            <p>Real-time alerts, volunteer coordination, and emergency tracking.</p>
+            <span class="tag">HTML</span>
+            <span class="tag">JS</span>
+            <span class="tag">System Design</span><br><br>
+            <a href="https://github.com/Ayushi-bhutani" target="_blank">View Mission →</a>
+        </div>
+
+        <div class="panel mission">
+            <h3>QuestSearch</h3>
+            <p>Search engine for structured question databases.</p>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">gRPC</span><br><br>
+            <a href="https://github.com/Ayushi-bhutani" target="_blank">View Mission →</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>📊 Skill Matrix</h2>
+
+    <div class="panel skills">
+        <div>
+            C++ / DSA
+            <div class="bar"><div class="fill" style="width: 90%"></div></div>
+        </div>
+        <div>
+            JavaScript / Backend
+            <div class="bar"><div class="fill" style="width: 75%"></div></div>
+        </div>
+        <div>
+            Machine Learning
+            <div class="bar"><div class="fill" style="width: 70%"></div></div>
+        </div>
+        <div>
+            System Design Thinking
+            <div class="bar"><div class="fill" style="width: 80%"></div></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>
+        “I don’t just finish projects. I understand why they work.”<br>
+        <a href="https://github.com/Ayushi-bhutani" target="_blank">GitHub</a>
+    </p>
+</footer>
+
+</body>
+</html>
